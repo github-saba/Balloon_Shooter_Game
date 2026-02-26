@@ -169,7 +169,7 @@ on (release) {
 ---
 ### Balloon Shooter Game Screen in Macromedia Falsh MX
 
-![BalloonShooterGameScreen](BSG_creen.png)
+![hi](BSG_Screen.png)
 
 ### Balloon Shooter Game Over Screen in Macromedia Falsh MX
 
