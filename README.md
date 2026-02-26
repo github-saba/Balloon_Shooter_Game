@@ -1,7 +1,7 @@
-# Balloon_Shooter_Game
-My University  2nd year - Computer Graphics - Small Project
+# Balloon_Shooter_Game 
+## My University  2nd year - Computer Graphics - Small Project
 ---
-## Actions for frame1 of layer1
+### Actions for frame1 of layer1
 ```text
 function createballoon(n) {
 
@@ -69,7 +69,7 @@ stop();
 
 ```
 ---
-## Actions for Gun
+### Actions for Gun
 ```text
 
 onClipEvent(load) {
@@ -132,7 +132,7 @@ flystages++;
 
 ```
 ---
-## Actions for Your Score
+### Actions for Your Score
 
 ```text
 on (release) {
