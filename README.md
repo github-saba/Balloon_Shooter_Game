@@ -1,10 +1,8 @@
 # Balloon_Shooter_Game
 My University  2nd year - Computer Graphics - Small Project
-
+---
 ## Actions for frame1 of layer1
-
 ```text
-
 function createballoon(n) {
 
 // create a new movie clip
@@ -71,10 +69,9 @@ stop();
 
 ```
 ---
-
 ## Actions for Gun
+```text
 
---- text
 onClipEvent(load) {
 this._x = 275;
 this._y = 200;
@@ -135,7 +132,6 @@ flystages++;
 
 ```
 ---
-
 ## Actions for Your Score
 
 ```text
