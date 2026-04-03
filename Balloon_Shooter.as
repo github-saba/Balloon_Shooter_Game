@@ -1,3 +1,5 @@
+
+// Actions for frame1 of layer1
 function createballoon(n) {
 
         // create a new movie clip
