@@ -69,3 +69,45 @@ function moveballoon() {
 // create 50 balloons
 initializeballoon(3);
 stop();
+
+// Actions for Gun
+onClipEvent(load) {
+      this._x = 275;
+      this._y = 200;
+      x = this._x;
+      y = this._y;
+      speed = 12;
+      _global.blownballoons = 0; // Variable for Counting of blown Balloons
+}
+
+onClipEvent(enterFrame) {
+      if (Key.isDown(Key.LEFT)) {
+          if (this._x > 0) x -= speed;
+      }
+      if (Key.isDown(Key.RIGHT)) {
+          if (this._x < 550) x += speed;
+      }
+      if (Key.isDown(Key.UP)) {
+          if (this._y > 0) y -= speed;
+      }
+      if (Key.isDown(Key.DOWN)) {
+          if (this._y < 400) y += speed;
+      }
+      this._x = x;
+      this._y = y;
+
+      if (Key.isDown(Key.SPACE)) {
+            if (this.hitTest(_parent.balloon0._x, _parent.balloon0._y)) {
+                _parent.balloon0._y = -10;
+                _global.blownballoons++;
+            }
+            if (this.hitTest(_parent.balloon1._x, _parent.balloon1._y)) {
+                _parent.balloon1._y = -10;
+                _global.blownballoons++;
+            }
+            if (this.hitTest(_parent.balloon2._x, _parent.balloon2._y)) {
+                _parent.balloon2._y = -10;
+                _global.blownballoons++;
+            }
+      }
+}
