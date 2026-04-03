@@ -111,3 +111,39 @@ onClipEvent(enterFrame) {
             }
       }
 }
+
+
+// Actions for Quit button
+on (release) {
+      nextframe();
+}
+
+// Actions for Sample balloon
+onClipEvent(load) {
+        flystages = 0;// Variable for Counting of stages of Balloon Flying
+}
+
+onClipEvent(enterFrame) {
+        if (flystages <= 12*150) {
+              _root.moveballoon();
+        }
+        else {
+              _root.gotoAndStop(2);
+        }
+        flystages++;
+}
+
+// Actions for Your Score
+on (release) {
+            if (_global.blownballoons > 60) {
+                    trace("Congratulations !");
+                    trace("You have shot " + _global.blownballoons + " balloon(s)");            
+            } else if (_global.blownballoons > 30) {
+                    trace("Good!");
+                    trace("You have shot " + _global.blownballoons + " balloon(s)");
+            } else if (_global.blownballoons > 0) {           
+                    trace("You have shot " + _global.blownballoons + " balloon(s)");           
+            } else {            
+                    trace("You have'nt shot balloon(s)");
+            }
+      }
